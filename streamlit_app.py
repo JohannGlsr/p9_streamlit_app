@@ -33,6 +33,6 @@ if st.button("Recommander"):
     # Afficher la réponse de la fonction Azure dans l'interface utilisateur
     if response.status_code == 200:
         recommended_articles = response.text
-        st.success(f"Articles recommandés pour l'utilisateur {user_id}: {recommended_articles}")
+        st.success(f"{recommended_articles}")
     else:
         st.error("Erreur lors de la récupération des recommandations.")
